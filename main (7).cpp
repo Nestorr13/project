@@ -25,13 +25,13 @@ public:
         }
     }
     void pop_back() {
-        if (head == nullptr) {
+        if (head == NULL) {
             return;
         }
         
         if (head == tail) { 
             delete head;
-            head = tail = nullptr;
+            head = tail = NULL;
         } else {
             Node* current = head;
             while (current->next != tail) {
@@ -39,7 +39,7 @@ public:
             }
             delete tail;
             tail = current;
-            tail->next = nullptr;
+            tail->next = NULL;
         }
     }
 
